@@ -1,0 +1,231 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    --font-p-size: 1.8rem;
+}
+
+.result {
+    background: linear-gradient(180deg, var(--light-slate-blue) 0%, var(--light-royal-blue) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 25px 25px;
+}
+
+.result__title {
+    font-size: 1.6rem;
+    color: var(--light-lavender);
+    margin-top: 30px;
+}
+
+.result__circle {
+    border-radius: 100%;
+    background: linear-gradient(180deg, var(--violet-blue) 0%, var(--persian-blue) 100%);
+    padding: 16px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.result__number {
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.result__total {
+    font-size: 1.2rem;
+    color: var(--light-lavender);
+}
+
+.result__congrats {
+    margin-top: 25px;
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.result__text {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--light-lavender);
+    max-width: 180px;
+}
+
+.summary {
+    margin: 15px 30px;
+}
+
+.summary__title {
+    color: var(--dark-gray-blue);
+}
+
+.summary__list-container {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.summary__list-item {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.summary--Reaction {
+    background: hsla(0, 100%, 67%, 0.07);
+}
+
+.summary--Memory {
+    background: hsla(39, 100%, 56%, 0.07);
+}
+
+.summary--Verbal {
+    background: hsla(166, 100%, 37%, 0.07);
+}
+
+.summary--Visual {
+    background: hsla(234, 85%, 45%, 0.07);
+}
+
+.summary--text-Reaction {
+    color: var(--light-red);
+}
+
+.summary--text-Memory {
+    color: var(--orange-yellow);
+}
+
+.summary--text-Verbal {
+    color: var(--green-teal);
+}
+
+.summary--text-Visual {
+    color: var(--cobalt-blue);
+}
+
+.summary__icon-container {
+    width: 16px;
+}
+
+.summary__icon {
+    width: 100%;
+}
+
+.summary__list-text {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.summary__result {
+    display: flex;
+    gap: 5px;
+}
+
+.summary__result-text {
+    color: var(--dark-gray-blue);
+    font-size: 1.2rem;
+}
+
+.text--dark {
+    color: var(--dark-gray-blue);
+}
+
+.text--bold {
+    font-weight: 800;
+}
+
+.text-dark--opacity {
+    opacity: 0.5;
+}
+
+.summary__button {
+    text-decoration: none;
+    width: 100%;
+    background: var(--dark-gray-blue);
+    color: var(--white);
+    display: block;
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 1.6rem;
+}
