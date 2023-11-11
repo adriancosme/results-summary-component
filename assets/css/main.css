@@ -118,19 +118,23 @@ html {
 }
 
 .result__text {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin: 10px 15px 35px 15px;
     text-align: center;
     color: var(--light-lavender);
-    max-width: 180px;
+    max-width: 250px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
 }
 
 .summary {
-    margin: 15px 30px;
+    margin: 20px 30px;
 }
 
 .summary__title {
     color: var(--dark-gray-blue);
+    font-size: 1.8rem;
+    font-weight: 800;
 }
 
 .summary__list-container {
@@ -225,7 +229,11 @@ html {
     color: var(--white);
     display: block;
     text-align: center;
-    padding: 10px 25px;
+    padding: 15px 25px;
     border-radius: 25px;
     font-size: 1.6rem;
+}
+
+.summary__button:hover {
+    background: var(--violet-blue);
 }

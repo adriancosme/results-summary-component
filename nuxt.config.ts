@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css', '~/assets/css/tablet.css', '~/assets/css/desktop.css'],
   app: {
     head: {
       title: "Frontend Mentor - Results summary component",
